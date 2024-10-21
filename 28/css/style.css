@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+body{
+    font-family: 'Montserrat';
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
+h1{
+    font-weight: 600;
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 0.5%;
+}
+
+.inputBox{
+    border: 1px solid rgb(239, 201, 197);
+    width: 15%;
+    height: 40px;
+}
+
+.inputBox:hover{
+    border: 1px solid rgb(234, 135, 119);
+}
+
+.textBox{
+    text-indent: 5%;
+    font-size: large;
+}
+
+.textBox::placeholder{
+    font-size: large;
+    color: gray;
+}
+
+.textBox:focus{
+    outline: 1px solid rgb(234, 135, 119);
+    border: 1px solid rgb(234, 135, 119);
+}
+.inputBox.button{
+    width: 11%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 201, 197);
+    color: white;
+}
+.inputBox.button:hover{
+    cursor: pointer;
+    background-color: rgb(234, 135, 119);
+}
+
+.button.text-content {
+    text-align: center;
+    vertical-align: middle;
+}
+.errorMessage{
+    display:none;
+    margin-top: 1%;
+    font-weight: 900;
+    color: red;
+}
+.leaderboard-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    gap: 15px;
+    font-size: 180%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.item{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    background-color: rgb(239, 201, 197);
+    padding: 0% 4% 0% 2%;
+    flex-shrink: 0;
+}
+.name-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 108px;
+    width: 250px;
+}
+.date{
+    color: gray;
+    font-size: 60%;
+}
+.country{
+    width: 100px;
+    text-align: left;
+}
+.score{
+    width: 50px;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 4%;
+    width: 100%;
+}
+.rounded-button{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 70%;
+}
+.rounded-button:hover{
+    cursor: pointer;
+    background-color: rgb(222, 244, 179);
+
+}
+
+.delete.rounded-button > .rounded-button.text-content::after{
+    content: url(https://img.icons8.com/?size=100&id=85081&format=png&color=FF0000);
+    scale: .2;
+}
+
+.increase.rounded-button > .rounded-button.text-content::after{
+    content: '+5';
+}
+
+.decrease.rounded-button > .rounded-button.text-content::after{
+    content: '-5';
+}

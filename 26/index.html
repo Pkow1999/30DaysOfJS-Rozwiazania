@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>World Countries List</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<header id="countries">
+		<h1>World Countries List</h1>
+		<h4 class="subtitle">Total Number of countries: <span class="number-of-countries"></span></p>
+		<p class="countries-filter"></p>
+		<div class="button-wrapper">
+			<span>
+				<input name="filterWay" id="toggleStart" type="radio" class="toggle">
+				<label for="toggleStart" class="btn radioBtn">
+					Starting Word
+				</label>
+			</span>
+			<span>
+				<input name="filterWay" id="toggleSearch" type="radio" class="toggle">
+				<label for ="toggleSearch" class="btn radioBtn">
+					Search with any word
+				</label>
+			</span>
+			<span>
+				<input id="toggleReverse" type="checkbox" class="toggle">
+				<label for="toggleReverse" class="ascend-descend btn"></label>
+			</span>
+		</div>
+		<div class="search-wrapper">
+			<input type="text" class="search-country" placeholder="Search country...">
+			<span id="searchImage"></span>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+		</div>
+	</main>
+
+	<script src="./data/countries.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

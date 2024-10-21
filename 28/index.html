@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Leaderboard</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>30 Days Of JavaScript Challenge Leaderboard</h1>
+		<div class="input-wrapper">
+			<input type="text" id="firstName" class="inputBox textBox" placeholder="First Name">
+			<input type="text" id="lastName" class="inputBox textBox" placeholder="Last Name">
+			<input type="text" id="country" class="inputBox textBox" placeholder="country">
+			<input type="text" id="score" class="inputBox textBox" placeholder="Player Score">
+			<div onClick="addPlayerClick()" id="addPlayer" class="inputBox button">
+				<div class="button text-content">
+					Add Player
+				</div>
+			</div>
+		</div>
+		<div class="errorMessage">
+			All fields are required
+		</div>
+	</header>
+	<main>
+		<div class="leaderboard-wrapper">
+		</div>
+	</main>
+
+	<script src="./data/challenges_info.js"></script>
+	<script src="./scripts/modelNode.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

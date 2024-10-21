@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Asabeneh Yetayeh</h1>
+		<div class="titles">
+			<span class="emoji"></span>
+			<span class="title"></span>
+		</div>
+		<p class="subtitle">
+			I am Asabeneh Yetayeh, I am instructor, developer, motivator, and content creator.
+			I love educating people and creating educational materials.
+			In January 2019, I also created a teaching material <strong>JavaScript For Everyone</strong>.
+			In December 2019, I created <strong>30Days of Python</strong> challenge and in
+			January 2020 <strong>30 Days Of JavaScript</strong> challenge.
+		</p>
+	</header>
+	<main>
+		<div class="button-wrapper">
+			<div class="button-container">
+				<div class="button" onclick="changeTech(this)">
+					<div class="button text-content">
+						JAVASCRIPT FOR EVERYONE
+					</div>
+				</div>
+				<div class="button" onclick="changeTech(this)">
+					<div class="button text-content">
+						30DAYS OF PYTHON
+					</div>
+				</div>
+				<div class="button">
+					<div class="button text-content" onclick="changeTech(this)">30DAYS OF JAVASCRIPT</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			The technologies I teach <span class="technologies"></span>
+		</div>
+	</main>
+
+	<script src="./data/challenges_info.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
