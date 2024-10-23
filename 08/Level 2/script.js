@@ -61,7 +61,7 @@
     }
     console.log(`Logged in users: ${loggedUsers}`)
     console.log(`Users with points greater than 50: ${userWithPointsGreaterThan50}`)
-//1 - po pierwsze... CO TO KURWA ZNACZY MANY SKILLS, po drugie... mam je wziac z tabelki nizej??? - ech... zalozmy ze chodzi o najmocniejszego gracza
+//1 - po pierwsze... CO TO ZNACZY MANY SKILLS, po drugie... mam je wziac z tabelki nizej??? - ech... zalozmy ze chodzi o najmocniejszego gracza
     let max = 0
     let maxSkilledUser = undefined
     for(const user of Object.keys(users)){

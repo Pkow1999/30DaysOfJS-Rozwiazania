@@ -1,4 +1,4 @@
-//1 - welp JS jest SPIERDOLOny i nie ogarnia function overloading, jest doslownie uzywane zaslanianie funkcji nawet jak nie maja tych samych argumentów
+//1 - Nie Ogarnia function overloading, jest doslownie uzywane zaslanianie funkcji nawet jak nie maja tych samych argumentów
     function fullName(){
         console.log("PKow")
     }

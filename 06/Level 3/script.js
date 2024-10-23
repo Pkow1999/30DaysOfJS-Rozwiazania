@@ -1,6 +1,6 @@
 //1
     const copyOfCountries = countries.slice()
-    copyOfCountries.push("DUPA")
+    copyOfCountries.push("Kraj")
     console.log(copyOfCountries)
     //tyle ze to shallow copy jest - jakby to byly obiekty bardziej skomplikowane od stringow to bysmy mieli problem
     //bo modyfikacja jednego zmieni nam w obu
@@ -43,8 +43,8 @@
         }
     }
     console.log(nameMaxLength[0])
-//6 - TO JEST KURWA TO SAMO CO 4
-//7 - te zadania sa coraz glupsze... PRZECIE TO BYLO w LEVEL 2 - 10
+//6 - TO JEST TO SAMO CO 4
+//7 - BYLO w LEVEL 2 - 10
     const countryOnly4Characters = []
     for(const country of countries){
         if(country.length === 4){
@@ -52,7 +52,7 @@
         }
     }
     console.log(countryOnly4Characters)
-//8 - no w koncu cos interesujacego... TYLKO TO JEST ZNOWU STRING MANIPULATION A NIE KURWA ARRAY
+//8
     const twoOrMoreWords = []
     for(const country of countries){
         if(country.match(/\s/gi) != null){
